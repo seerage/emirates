@@ -55,3 +55,31 @@
 	}
 
 }
+
+@media (max-width: $lg) {
+
+	.form_3-in-1-row {
+
+		& input, & select, & button {
+
+			width: 49%;
+
+		}
+
+	}
+
+}
+
+@media (max-width: $sm) {
+	
+	.form_3-in-1-row {
+
+		& input, & select, & button {
+
+			width: 100%;
+
+		}
+
+	}
+
+}

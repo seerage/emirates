@@ -182,7 +182,7 @@ body, html {
   transition: color 0.3s ease-out;
 }
 .header-navigation ul a:hover {
-  color: #d5d5d5;
+  color: #BCA182;
 }
 .header-navigation ul li {
   position: relative;
@@ -277,8 +277,18 @@ body, html {
   width: 32%;
 }
 
+@media (max-width: 992px) {
+  .form_3-in-1-row input, .form_3-in-1-row select, .form_3-in-1-row button {
+    width: 49%;
+  }
+}
+@media (max-width: 576px) {
+  .form_3-in-1-row input, .form_3-in-1-row select, .form_3-in-1-row button {
+    width: 100%;
+  }
+}
 .main-screen {
-  padding: 5.882rem 0;
+  padding: 5.882rem 0 8.824rem 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -297,4 +307,91 @@ body, html {
 .offer-form__title_bold {
   font-weight: 700;
   display: block;
+}
+
+.info-notice {
+  cursor: pointer;
+  position: relative;
+  max-width: 26.471rem;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  font-size: 0.882rem;
+  padding: 0.882rem 2.353rem 0.882rem 0.882rem;
+  border: 2px solid #7E6D51;
+  margin-top: 1.471rem;
+}
+.info-notice__text_bold {
+  font-weight: 700;
+}
+.info-notice__image {
+  position: absolute;
+  top: -0.588rem;
+  right: -1.765rem;
+}
+
+.main-screen-card-wrapper {
+  margin-top: -3.529rem;
+}
+
+.main-screen-card {
+  text-decoration: none;
+  padding: 0 1.176rem;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 7.059rem;
+  background-image: url(../images/main-screen-card-background-pattern.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  border: 1px solid #7E6D51;
+}
+.main-screen-card__text {
+  font-size: 1.176rem;
+  margin-left: 0.882rem;
+  color: #fff;
+  line-height: 1.3;
+}
+.main-screen-card svg {
+  -webkit-box-flex: 60px;
+      -ms-flex: 60px 0 0px;
+          flex: 60px 0 0;
+}
+
+@media (max-width: 1200px) {
+  .main-screen-card {
+    height: 5.588rem;
+  }
+  .main-screen-card__text {
+    font-size: 13px;
+  }
+}
+@media (max-width: 992px) {
+  .offer-form__title {
+    font-size: 1.471rem;
+  }
+  .main-screen-card {
+    margin: 0;
+    margin-bottom: 0.588rem;
+  }
+}
+@media (max-width: 768px) {
+  .offer-form__title {
+    font-size: 1.176rem;
+  }
+}
+@media (max-width: 576px) {
+  .info-notice {
+    padding: 0.882rem;
+  }
+  .info-notice__image {
+    display: none;
+  }
 }

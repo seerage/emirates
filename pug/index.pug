@@ -51,7 +51,7 @@ html(lang="ru")
 		.main-screen(style="background-image: url(images/main-screen-background.jpg)")
 			.container 
 				.row.justify-content-center
-					.col-lg-10
+					.col-xxl-10
 						+b.offer-form
 							+e.title Лучшие базы недвижимости в ОАЭ от компании 
 								+e.SPAN.title_bold Emirates Home
@@ -84,10 +84,29 @@ html(lang="ru")
 								+e.BUTTON.submit-button 
 									span Показать стоимость
 									+svg(23,23,'loup')
-							+b.info-notice 
-								+e.text 
+							+b.info-notice(data-modal="callbcak")
+								+e.SPAN.text 
 									| Получить консультацию менеджера и 
-									+e._accent подобрать лучшие варианты 
+									+e.SPAN.__text_bold подобрать лучшие варианты 
 									| по Вашим запросам
-								+e.IMG.__image 
+								+e.__image 
 									img(src="images/mobile.png", alt="")
+		.main-screen-card-wrapper
+			.container 
+				.row 
+					.col-lg-3.col-md-6
+						+b.A.main-screen-card(href="#") 
+							+svg(46,46,'person')
+							+e.text Пообщаться с брокером 
+					.col-lg-3.col-md-6
+						+b.A.main-screen-card(href="#") 
+							+svg(50,50,'chart')
+							+e.text Рассчитать рентабельность инвестиций
+					.col-lg-3.col-md-6
+						+b.A.main-screen-card(href="#") 
+							+svg(52,54,'book')
+							+e.text Получить актуальный каталог
+					.col-lg-3.col-md-6
+						+b.A.main-screen-card(href="#") 
+							+svg(50,50,'flag')
+							+e.text Продать недвижимость
