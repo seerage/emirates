@@ -1,0 +1,53 @@
+include includes/bemto/bemto
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset='utf-8')
+		title Emirates Home
+		link(rel='icon', href='images/favicon.png')
+		meta(name='description', content='Стоматология доктора Латышевой')
+		meta(name='viewport', content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no')
+		link(rel='stylesheet', href='libs/bootstrap/css/bootstrap-reboot.min.css')
+		link(rel='stylesheet', href='libs/bootstrap/css/bootstrap-grid.min.css')
+		link(rel='stylesheet', type='text/css', href='css/main.css')
+		script(src='js/main.js', defer)
+	body
+		header.header
+			.container
+				+b.header-flex-wrapper
+					+e.item.img-responsive
+						img(src="images/logo.png", height="68", width="auto")
+					+e.item
+						+b.header-navigation
+							ul
+								li.has-children
+									a(href="#") Купить
+									ul
+										li
+											a(href="#") Очень длинное название для первого пункта подменю
+										li
+											a(href="#") Пункт №2
+										li
+											a(href="#") Пункт №3
+								li 
+									a(href="#") Новостройки
+								li 
+									a(href="#") Районы
+								li 
+									a(href="#") Застройщики
+								li 
+									a(href="#") О нас
+								li 
+									a(href="#") Контакты
+					+e.item
+						+e.A.email(href="mailto:info@kpgroup-msk.ru") info@kpgroup-msk.ru
+						+e.A.phone(href="tel:+7 958 502 02 20") +7 958 502 02 20
+						+e.modal-call#popup-trigger Заказать звонок
+		.main-screen(style="background-image: url(images/main-screen-background.jpg)")
+			.container 
+				.row.justify-content-center
+					.col-lg-10
+						+b.offer-form
+							+e.title Лучшие базы недвижимости в ОАЭ от компании 
+								+e.SPAN.title_bold Emirates Home

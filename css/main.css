@@ -1,0 +1,183 @@
+body {
+  font-family: "Roboto";
+  min-width: 320px;
+  overflow-x: hidden;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+}
+.header {
+  background-color: #000;
+}
+
+.header-flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-flex-wrapper__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.header-flex-wrapper__email {
+  font-size: 0.882rem;
+  color: #7E6D51;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+.header-flex-wrapper__email:hover {
+  color: #BCA182;
+}
+.header-flex-wrapper__phone {
+  font-size: 1.118rem;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+.header-flex-wrapper__phone:hover {
+  color: #d5d5d5;
+}
+.header-flex-wrapper__modal-call {
+  font-size: 0.647rem;
+  color: #BEBEBE;
+  text-decoration: underline;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+.header-flex-wrapper__modal-call:hover {
+  color: #fff;
+}
+.header-flex-wrapper__modal-call::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #54BB5E;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.header-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.header-navigation ul li.has-children::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  margin-top: -3px;
+  right: 0;
+  width: 11px;
+  height: 6px;
+  background-image: url(../images/svg/arrow-down.svg);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.header-navigation ul li.has-children ul {
+  display: none;
+}
+.header-navigation ul a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+.header-navigation ul a:hover {
+  color: #d5d5d5;
+}
+.header-navigation ul li {
+  position: relative;
+}
+.header-navigation ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  min-width: 23.529rem;
+  padding: 0.588rem 1.765rem;
+}
+.header-navigation ul li:hover ul {
+  display: block;
+}
+.header-navigation ul li:hover::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.header-navigation ul li a {
+  margin: 0.588rem 0;
+}
+.header-navigation > ul > li > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1.765rem;
+  height: 5.294rem;
+}
+
+.main-screen {
+  padding: 5.882rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.offer-form {
+  padding: 1.765rem 3.529rem;
+  background: rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+.offer-form__title {
+  font-size: 1.765rem;
+  color: #fff;
+}
+.offer-form__title_bold {
+  font-weight: 700;
+  display: block;
+}

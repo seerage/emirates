@@ -1,0 +1,86 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+
+	background-color: $black;
+
+}
+
+.header-flex-wrapper {
+
+	display: flex;
+	justify-content: space-between;
+
+	&__item {
+
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+	}
+
+	&__email {
+
+		font-size: .882rem;
+		color: $accent;
+		text-decoration: none;
+		@include transition(color);
+
+		&:hover {
+
+			color: $accent-light;
+
+		}
+
+	}
+
+	&__phone {
+
+		font-size: 1.118rem;
+		color: $white;
+		font-weight: 700;
+		text-decoration: none;
+		@include transition(color);
+
+		&:hover {
+
+			color: $whie-hover;
+
+		}
+
+	}
+
+
+	&__modal-call {
+
+		font-size: .647rem;
+		color: #BEBEBE;
+		text-decoration: underline;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		cursor: pointer;
+		@include transition(color);
+
+		&:hover {
+
+			color: $white;
+
+		}
+
+		&::before {
+
+			content: '';
+			width: 3px;
+			height: 3px;
+			background-color: #54BB5E;
+			border-radius: 50%;
+			margin-right: 5px;
+
+		}
+
+	}
+
+}

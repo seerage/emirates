@@ -1,0 +1,97 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the navigation of the site elements
+// -----------------------------------------------------------------------------
+.header-navigation {
+
+	& ul {
+
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		& li.has-children {
+
+			&::after {
+
+				content: '';
+				position: absolute;
+				display: block;
+				top: 50%;
+				margin-top: -3px;
+				right: 0;
+				width: 11px;
+				height: 6px;
+				background-image: url(../images/svg/arrow-down.svg);
+				@include transition(transform);
+
+			}
+
+			& ul {
+
+				display: none;
+
+			}
+
+		}
+	
+		& a {
+	
+			color: $white;
+			text-decoration: none;
+			display: block;
+			@include transition(color);
+
+			&:hover {
+
+				color: $whie-hover;
+
+			}
+	
+		}
+
+		& li {
+
+			position: relative;
+
+			& ul {
+
+				position: absolute;
+				top: 100%;
+				left: 0;
+				background-color: $black;
+				min-width: 23.529rem;
+				padding: .588rem 1.765rem
+
+			}
+
+			&:hover ul {
+
+				display: block;
+
+			}
+
+			&:hover::after {
+				transform: rotate(180deg);
+			}
+
+			& a {
+
+				margin: .588rem 0;
+
+			}
+
+		}
+			
+	}
+
+	& > ul > li > a {
+	
+		display: flex;
+		align-items: center;
+		margin: 0 1.765rem;
+		height: 5.294rem;
+
+	}
+
+}

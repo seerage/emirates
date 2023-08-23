@@ -1,0 +1,9 @@
+PUG guide
+$ npm install pug-cli --g # глобальная установка PUG
+$ npm install pug --save-dev # из директории проекта
+
+Render PUG в HTML. Запустить из папки PUG
+$ pug % pug -w . -o ../ -P
+
+PUG BEM гайд
+https://github.com/kizu/bemto

@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.main-screen {
+
+	padding: 5.882rem 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.offer-form {
+
+	padding: 1.765rem 3.529rem;
+	background: rgba(0, 0, 0, 0.75);
+	text-align: center;
+
+	&__title {
+
+		font-size: 1.765rem;
+		color: $white;
+		
+		&_bold {
+
+			font-weight: 700;
+			display: block;
+
+		}
+
+	}
+
+}
