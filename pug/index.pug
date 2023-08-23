@@ -1,4 +1,5 @@
 include includes/bemto/bemto
+include mixins/svg_import
 
 doctype html
 html(lang="ru")
@@ -16,7 +17,7 @@ html(lang="ru")
 		header.header
 			.container
 				+b.header-flex-wrapper
-					+e.item.img-responsive
+					+e.A.item.__logo.img-responsive(href="#")
 						img(src="images/logo.png", height="68", width="auto")
 					+e.item
 						+b.header-navigation
@@ -40,10 +41,13 @@ html(lang="ru")
 									a(href="#") О нас
 								li 
 									a(href="#") Контакты
-					+e.item
+					+e.item.__info
 						+e.A.email(href="mailto:info@kpgroup-msk.ru") info@kpgroup-msk.ru
 						+e.A.phone(href="tel:+7 958 502 02 20") +7 958 502 02 20
 						+e.modal-call#popup-trigger Заказать звонок
+					+e.item.__mobile-menu-call
+						+svg(30,30, 'menu')
+						span Меню
 		.main-screen(style="background-image: url(images/main-screen-background.jpg)")
 			.container 
 				.row.justify-content-center
@@ -51,3 +55,39 @@ html(lang="ru")
 						+b.offer-form
 							+e.title Лучшие базы недвижимости в ОАЭ от компании 
 								+e.SPAN.title_bold Emirates Home
+							+b.FORM.form._3-in-1-row
+								+e.SELECT(name="buy").select
+									+e.OPTION.option(disabled, selected) Купить
+									+e.OPTION.option Недвижимость
+									+e.OPTION.option Дом
+									+e.OPTION.option Участок
+								+e.SELECT(name="type").select
+									+e.OPTION.option(disabled, selected) Тип недвижимости
+									+e.OPTION.option Тип № 1
+									+e.OPTION.option Тип № 2
+									+e.OPTION.option Тип № 3
+								+e.SELECT(name="location").select
+									+e.OPTION.option(disabled, selected) Локации
+									+e.OPTION.option Локации № 1
+									+e.OPTION.option Локации № 2
+									+e.OPTION.option Локации № 3
+								+e.SELECT(name="districts").select
+									+e.OPTION.option(disabled, selected) Районы
+									+e.OPTION.option Районы № 1
+									+e.OPTION.option Районы № 2
+									+e.OPTION.option Районы № 3
+								+e.SELECT(name="price").select
+									+e.OPTION.option(disabled, selected) Стоимость
+									+e.OPTION.option Стоимость № 1
+									+e.OPTION.option Стоимость № 2
+									+e.OPTION.option Стоимость № 3
+								+e.BUTTON.submit-button 
+									span Показать стоимость
+									+svg(23,23,'loup')
+							+b.info-notice 
+								+e.text 
+									| Получить консультацию менеджера и 
+									+e._accent подобрать лучшие варианты 
+									| по Вашим запросам
+								+e.IMG.__image 
+									img(src="images/mobile.png", alt="")

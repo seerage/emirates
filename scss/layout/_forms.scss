@@ -1,0 +1,57 @@
+// -------------------------------------
+// This file contains all forms styles 
+// -------------------------------------
+.form {
+
+	&__select, &__input, &__submit-button {
+
+		height: 2.647rem;
+		color: #5E5E5E;
+		font-size: .882rem;
+		padding: 0 .882rem;
+		background-color: #E9E9E9;
+		border: none;
+		margin-bottom: .882rem;
+
+	}
+
+	&__submit-button {
+		
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $accent;
+		color: $white;
+		font-size: 1rem;
+		@include transition(background-color);
+
+		& svg {
+
+			margin-top: 2px;
+			margin-left: 2px;
+
+		}
+
+		&:hover {
+
+			background-color: $accent-light;
+
+		}
+
+	}
+
+	&_3-in-1-row {
+
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		& input, & select, & button {
+
+			width: 32%;
+
+		}
+
+	}
+
+}

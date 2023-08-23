@@ -20,6 +20,12 @@
 
 	}
 
+	&__mobile-menu-call {
+
+		display: none;
+
+	}
+
 	&__email {
 
 		font-size: .882rem;
@@ -84,3 +90,49 @@
 	}
 
 }
+
+@media (max-width: $xl) {
+
+	.header-flex-wrapper__logo img {
+
+		max-width: 150px;
+		height: auto;
+
+	}
+
+}
+
+@media (max-width: $lg) {
+
+	.header-flex-wrapper {
+
+		padding: 10px 0;
+
+		&__info {
+
+			display: none;
+
+		}
+
+		&__mobile-menu-call {
+
+			display: flex;
+			color: #fff;
+			align-items: center;
+			justify-content: center;
+			flex-direction: row;
+			cursor: pointer;
+
+			& svg {
+
+				margin-right: 5px;
+
+			}
+
+		}
+
+	}
+
+
+}
+

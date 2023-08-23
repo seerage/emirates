@@ -14,9 +14,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-flex-wrapper">
-          <div class="header-flex-wrapper__item img-responsive"><img src="images/logo.png" height="68" width="auto">
-          </div>
+        <div class="header-flex-wrapper"><a class="header-flex-wrapper__item header-flex-wrapper__logo img-responsive" href="#"><img src="images/logo.png" height="68" width="auto"></a>
           <div class="header-flex-wrapper__item">
             <div class="header-navigation">
               <ul>
@@ -35,9 +33,14 @@
               </ul>
             </div>
           </div>
-          <div class="header-flex-wrapper__item"><a class="header-flex-wrapper__email" href="mailto:info@kpgroup-msk.ru">info@kpgroup-msk.ru</a><a class="header-flex-wrapper__phone" href="tel:+7 958 502 02 20">+7 958 502 02 20</a>
+          <div class="header-flex-wrapper__item header-flex-wrapper__info"><a class="header-flex-wrapper__email" href="mailto:info@kpgroup-msk.ru">info@kpgroup-msk.ru</a><a class="header-flex-wrapper__phone" href="tel:+7 958 502 02 20">+7 958 502 02 20</a>
             <div class="header-flex-wrapper__modal-call" id="popup-trigger">Заказать звонок
             </div>
+          </div>
+          <div class="header-flex-wrapper__item header-flex-wrapper__mobile-menu-call">
+            <svg width="30" height="30">
+              <use href="images/svg/sprite.svg#menu"></use>
+            </svg><span>Меню</span>
           </div>
         </div>
       </div>
@@ -48,6 +51,70 @@
           <div class="col-lg-10">
             <div class="offer-form">
               <div class="offer-form__title">Лучшие базы недвижимости в ОАЭ от компании <span class="offer-form__title offer-form__title_bold">Emirates Home</span>
+              </div>
+              <form class="form form_3-in-1-row">
+                <select class="form__select" name="buy">
+                  <option class="form__option" disabled="disabled" selected="selected">Купить
+                  </option>
+                  <option class="form__option">Недвижимость
+                  </option>
+                  <option class="form__option">Дом
+                  </option>
+                  <option class="form__option">Участок
+                  </option>
+                </select>
+                <select class="form__select" name="type">
+                  <option class="form__option" disabled="disabled" selected="selected">Тип недвижимости
+                  </option>
+                  <option class="form__option">Тип № 1
+                  </option>
+                  <option class="form__option">Тип № 2
+                  </option>
+                  <option class="form__option">Тип № 3
+                  </option>
+                </select>
+                <select class="form__select" name="location">
+                  <option class="form__option" disabled="disabled" selected="selected">Локации
+                  </option>
+                  <option class="form__option">Локации № 1
+                  </option>
+                  <option class="form__option">Локации № 2
+                  </option>
+                  <option class="form__option">Локации № 3
+                  </option>
+                </select>
+                <select class="form__select" name="districts">
+                  <option class="form__option" disabled="disabled" selected="selected">Районы
+                  </option>
+                  <option class="form__option">Районы № 1
+                  </option>
+                  <option class="form__option">Районы № 2
+                  </option>
+                  <option class="form__option">Районы № 3
+                  </option>
+                </select>
+                <select class="form__select" name="price">
+                  <option class="form__option" disabled="disabled" selected="selected">Стоимость
+                  </option>
+                  <option class="form__option">Стоимость № 1
+                  </option>
+                  <option class="form__option">Стоимость № 2
+                  </option>
+                  <option class="form__option">Стоимость № 3
+                  </option>
+                </select>
+                <button class="form__submit-button"> <span>Показать стоимость</span>
+                  <svg width="23" height="23">
+                    <use href="images/svg/sprite.svg#loup"></use>
+                  </svg>
+                </button>
+              </form>
+              <div class="info-notice"> 
+                <div class="info-notice__text">
+                   Получить консультацию менеджера и 
+                  <div class="info-notice___accent">подобрать лучшие варианты 
+                  </div>по Вашим запросам
+                </div><img class="info-notice__image" alt="" role="presentation" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
               </div>
             </div>
           </div>

@@ -95,3 +95,38 @@
 	}
 
 }
+
+@media (max-width: $xxl) {
+
+	.header-navigation > ul > li > a {
+
+		margin: 0 1.176rem;
+
+	}
+
+}
+
+@media (max-width: $xl) {
+
+	.header-navigation a {
+
+		font-size: .824rem;
+
+	}
+
+}
+
+@media (max-width: $lg) {
+
+	.header-navigation {
+
+		display: none;
+
+		& ul a {
+			
+		}
+
+	}
+	
+
+}
