@@ -101,11 +101,16 @@
 
 .home-page-slider {
 
+	&__slide {
+
+		background-color: #000;
+
+	}
+
 	&__flex-wrapper {
 
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 
 	}
 
@@ -113,12 +118,121 @@
 
 		width: 50%;
 
+		& img {
+
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+
+		}
+
 	}
 
 	&__content {
 
 		width: 50%;
 		padding: 2.353rem 3.529rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+
+	}
+
+	&__title {
+
+		font-size: 2.412rem;
+		margin-bottom: 2.353rem;
+		font-weight: 700;
+		color: #fff;
+
+		&_accent {
+
+			color: $accent;
+
+		}
+
+	}
+
+	&__card {
+
+		width: 100%;
+		border: 1px solid $accent;
+		padding: 1.176rem;
+		color: $white;
+
+		&-title {
+
+			font-size: 1.353rem;
+			padding-bottom: .588rem;
+			margin-bottom: .588rem;
+			position: relative;
+			display: inline-block;
+
+			&::after {
+
+				content: '';
+				position: absolute;
+				left: 10%;
+				bottom: 0;
+				width: 80%;
+				height: 1px;
+				background-color: $accent;
+
+			}
+
+		}
+
+		&-subtitle {
+
+			font-size: 19px;
+			font-weight: 700;
+
+		}
+
+		&-text {
+
+			margin-bottom: 30px;
+
+		}
+
+	}
+
+	&__link {
+
+		width: 11.765rem;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		color: #fff;
+		font-size: 15px;
+		border: 1px solid $accent;
+		padding: 8px 0;
+		text-decoration: none;
+		@include transition(color);
+
+		&:hover {
+
+			color: $whie-hover;
+
+		}
+
+	}
+
+}
+
+@media (max-width: $xxl) {
+
+	.home-page-slider {
+
+		&__content {
+
+			padding: 5.294rem 1.765rem;
+
+		}
 
 	}
 
@@ -132,7 +246,18 @@
 	
 		&__text {
 
-		font-size: 13px;
+			font-size: 13px;
+
+		}
+
+	}
+
+	.home-page-slider {
+
+		&__title {
+
+			font-size: 2.059rem;
+			margin-bottom: 1.176rem;
 
 		}
 
@@ -154,6 +279,22 @@
 		margin: 0;
 		margin-bottom: .588rem;
 		
+	}
+
+	.home-page-slider {
+
+		&__flex-wrapper {
+
+			flex-direction: column;
+
+		}
+
+		&__content, &__image {
+
+			width: 100%;
+
+		}
+
 	}
 
 }
@@ -178,6 +319,22 @@
 
 			display: none;
 
+		}
+
+	}
+
+	.home-page-slider {
+
+		&__content {
+
+			padding: 40px 20px 80px 20px;
+
+		}
+
+		&__title {
+
+			font-size: 26px;
+			
 		}
 
 	}

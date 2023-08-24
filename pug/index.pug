@@ -117,20 +117,63 @@ html(lang="ru")
 							+e.text Продать недвижимость
 		.section 
 			.container 
-				+b.home-page-slider 
+				+b.home-page-slider.one-slide-carousel
 					- count = 0;
 					while count < 5
 						- count++
-						+e.slide
+						+e.slide.one-slide-carousel__slide
 							+e.flex-wrapper
 								+e.image
-									img(src="images/home-carousel/preview-image.jpg")
+									img(src="images/home-carousel/preview-image.png")
 								+e.content(style="background-image: url('images/slide-background-pattern.png')")
 									+e.title 
 										+e.SPAN.title_accent Готовая к заселению 
 										| недвижимость
 									+e.card
-										+e.card-title Апартаменты, виллы, таунхаусы
+										+e.card-title Апартаменты, виллы, <br> таунхаусы
 										+e.card-subtitle +1000 ОБЪЕКТОВ
 										+e.card-text В Дубае и Абу-Даби
-										+e.link Узнать подробнее
+										+e.A.link(href="#") Узнать подробнее
+				.slider-dots.slider-dots--on-slider-bottom
+		.section
+			.container
+				h2.h2-title Подборка для вас
+				+b.tabs
+					+e.heading
+						+e.trigger.is-active.fs20 Квартиры
+						- let titles = ['Виллы', 'Пентхаусы', 'Таунхаусы', 'Дуплексы', 'Лофты', 'Земля', 'Коммерческая недвижимость'];
+						each title in titles
+							+e.trigger.fs20= title
+					+e.content
+						+b.three-slide-carousel
+							+e.slide 
+								+b.room-card
+									+e.image
+										img(src="images/room-card-image-preview.jpg", alt="")
+										+e.label Квартира/апартаменты
+									+e.content
+										+e.title 1-спальные апартаменты в Creek Waters от застройщика Emaar Properties (Type 1)
+										+e.flex-row
+											+e.info
+												+svg(9,17,'location')
+												| Dubai Harbour
+											+e.info
+												+svg(21,21,'helmet')
+												| DAMAC Properties
+										+e.flex-row 
+											+e.info
+												+svg(11,11,'door')
+												| 2 комнаты
+											+e.info 
+												+svg(12,12,'square')
+												| 68 м2
+										+e.flex-row 
+											+e.currency-changer
+												+svg(6,4,'small-arrow-up')
+												+e.current-currency RUB
+												+e.currency-changer-hidden-list
+													+e.currency-changer-list-item US
+													+e.currency-changer-list-item EUR
+													+e.currency-changer-list-item DG
+											+e.currency-amount 73 797 703
+

@@ -1,0 +1,48 @@
+.slider-dots {
+
+	.slick-dots li button::before {
+
+		display: none;
+
+	}
+
+	.slick-dots li {
+
+		width: 60px;
+		height: 6px;
+		background-color: #fff;
+		margin: 0 1.176rem;
+
+	}
+
+	.slick-dots li.slick-active {
+
+		background-color: $accent;
+
+	}
+
+	&--on-slider-bottom {
+
+		position: relative;
+		bottom: 50px;
+		left: 0;
+
+	}
+
+}
+
+@media (max-width: $sm) {
+
+	.slider-dots {
+
+		.slick-dots li {
+
+			width: 30px;
+			height: 3px;
+			margin: 0 .588rem;
+	
+		}
+
+	}
+
+}
