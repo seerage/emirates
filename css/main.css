@@ -36,6 +36,19 @@ body, html {
   font-weight: 400;
   src: url("../fonts/Roboto-Regular.woff2") format("woff2");
 }
+.h2-title {
+  margin-bottom: 2.941rem;
+  font-size: 2.118rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .h2-title {
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
 .fs20 {
   font-size: 1.176rem;
 }
@@ -311,7 +324,7 @@ body, html {
   width: 60px;
   height: 6px;
   background-color: #fff;
-  margin: 0 1.176rem;
+  margin: 0 0.882rem;
 }
 .slider-dots .slick-dots li.slick-active {
   background-color: #7E6D51;
@@ -327,6 +340,178 @@ body, html {
     width: 30px;
     height: 3px;
     margin: 0 0.588rem;
+  }
+}
+.tabs__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1.765rem;
+}
+.tabs__trigger {
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+.tabs__trigger.is-active {
+  color: #7E6D51;
+  text-decoration: underline;
+}
+.tabs__trigger:hover {
+  color: #7E6D51;
+}
+
+.room-card {
+  background-color: #EBE3DA;
+  padding: 0.882rem;
+  max-width: 500px;
+}
+.room-card__image {
+  margin-bottom: 0.882rem;
+  position: relative;
+}
+.room-card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.room-card__label {
+  position: absolute;
+  top: 0.882rem;
+  right: 0.882rem;
+  background: rgba(188, 161, 130, 0.6);
+  color: #fff;
+  font-size: 0.588rem;
+  padding: 0.588rem;
+}
+.room-card__title {
+  font-size: 0.882rem;
+  font-weight: 700;
+  margin-bottom: 0.588rem;
+  line-height: 1.4;
+}
+.room-card__flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.588rem;
+}
+.room-card__footer-row {
+  margin-top: 1.176rem;
+  margin-bottom: 0;
+}
+.room-card__info {
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.room-card__info svg {
+  margin-right: 5px;
+}
+.room-card__currency-changer {
+  font-size: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  height: 20px;
+  min-width: 45px;
+  background-color: #BCA182;
+  cursor: pointer;
+}
+.room-card__currency-changer-wrapper {
+  position: relative;
+}
+.room-card__currency-changer svg {
+  margin-right: 5px;
+}
+.room-card__currency-changer-hidden-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+.room-card__currency-changer-hidden-list.is-opened {
+  visibility: visible;
+  opacity: 1;
+}
+.room-card__currency-changer-list-item {
+  color: #000;
+  text-align: center;
+  padding: 3px 0;
+  font-size: 9px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+.room-card__currency-changer-list-item:hover {
+  background-color: #BCA182;
+}
+
+.three-slide-carousel {
+  position: relative;
+  margin-left: -0.588rem;
+  margin-right: -0.588rem;
+}
+.three-slide-carousel .slick-track {
+  padding-bottom: 50px;
+}
+.three-slide-carousel__slide {
+  margin: 0 0.588rem;
+}
+.three-slide-carousel .slick-arrow {
+  position: absolute;
+  top: calc(50% - 50px);
+  margin-top: -12px;
+  cursor: pointer;
+}
+.three-slide-carousel .slick-arrow-next {
+  right: -50px;
+}
+.three-slide-carousel .slick-arrow-prev {
+  left: -50px;
+}
+
+@media (max-width: 1400px) {
+  .three-slide-carousel .slick-arrow-next {
+    right: -20px;
+  }
+  .three-slide-carousel .slick-arrow-prev {
+    left: -20px;
+  }
+}
+@media (max-width: 576px) {
+  .three-slide-carousel .slick-dots {
+    bottom: 0;
   }
 }
 .main-screen {
