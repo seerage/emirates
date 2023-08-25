@@ -1,12 +1,167 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.footer {
+
+	background-color: $black;
+	padding-top: 30px;
+	color: $white;
+
+}
+
+.footer-logo {
+
+	max-width: 140px;
+
+	& span {
+
+		font-size: 10px;
+		color: rgba(188, 161, 130, 0.70);
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 35px;
+		margin-top: 5px;
+
+	}
+}
+
+.footer-tel  {
+
+	margin-bottom: 25px;
+
+	&__title {
+
+		font-size: 19px;
+		font-weight: 400;
+
+	}
+
+	&__item {
+
+		font-size: 19px;
+		font-weight: 700;
+
+	}
+
+}
+
+.footer-mail {
+
+	&__title {
+
+		font-size: 19px;
+		font-weight: 400;
+
+	}
+
+	&__item {
+
+		font-size: 19px;
+		font-weight: 700;
+
+	}
+
+}
+
 .footer-menu {
 
 	&__title {
 
-		
+		font-size: 21px;
+		font-weight: 700;
+		margin-bottom: 15px;
 
 	}
+
+	&__list {
+
+		list-style-type: none;
+		padding: 0;
+
+		& li {
+
+			margin-bottom: 10px;
+
+			& a {
+				text-decoration: none;
+				color: $white;
+				@include transition(color);
+
+				&:hover {
+
+					color: $accent-light;
+	
+				}
+
+			}
+
+		}
+
+	}
+	
+}
+
+.footer-social {
+
+	margin-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
+
+	& a {
+
+		text-decoration: none;
+		background-color: $accent;
+		padding: 7px;
+		margin-right: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+}
+
+.footer-address {
+
+	&__title {
+
+		font-size: 19px;
+		font-weight: 400;
+		margin-bottom: 15px;
+
+	}
+
+	&__item {
+
+		font-size: 15px;
+		font-weight: 400;
+		margin-bottom: 30px;
+
+	}
+
+}
+
+.footer-btn {
+
+	&__btn-footer {
+
+		color: $white;
+		background-color: #7E6D51;
+		border: none;
+		padding: 15px 60px;
+
+		& span {
+			font-size: 19px;
+		}
+
+	}
+
+}
+
+.footer-down-wrap {
+
+	display: flex;
+	justify-content: space-between;
 
 }

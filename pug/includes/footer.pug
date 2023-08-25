@@ -2,10 +2,70 @@ footer.footer
 	.container
 		.row 
 			.col-lg-3 
-				img.footer-logo(src="", alt="")
+				+b.footer-logo 
+					img.footer-logo(src="/images/KP-LOGO.png", alt="")
+					span Недвижимость в ОАЭ
+				+b.footer-tel 
+					+e.title Телефон
+					+e.item +7 999 999 99 99
+				+b.footer-mail  
+					+e.title E-mail
+					+e.item prototype@test.ru
 			.col-lg-2 
 				+b.footer-menu
 					+e.title Информация
 					+e.UL.list
 						+e.LI.list-item
 							+e.A.link(href="#") Информация
+						+e.LI.list-item
+							+e.A.link(href="#") Информация
+						+e.LI.list-item
+							+e.A.link(href="#") Информация
+						+e.LI.list-item
+							+e.A.link(href="#") Информация
+						+e.LI.list-item
+							+e.A.link(href="#") Информация
+						+e.LI.list-item
+							+e.A.link(href="#") Информация
+			.col-lg-4   
+				+b.footer-menu
+					+e.title Купить
+					+e.UL.list
+						+e.LI.list-item
+							+e.A.link(href="#") Продажа недвижимости в ОАЭ
+						+e.LI.list-item
+							+e.A.link(href="#") Продажа недвижимости в ОАЭ
+						+e.LI.list-item
+							+e.A.link(href="#") Продажа недвижимости в ОАЭ
+						+e.LI.list-item
+							+e.A.link(href="#") Продажа недвижимости в ОАЭ
+						+e.LI.list-item
+							+e.A.link(href="#") Продажа недвижимости в ОАЭ
+						+e.LI.list-item
+							+e.A.link(href="#") Продажа недвижимости в ОАЭ
+			.col-lg-3  
+				+b.footer-social 
+					+e.A.link(href="#")
+						+svg(24,24,"telegram")
+					+e.A.link(href="#")
+						+svg(24,24,"telegram")
+					+e.A.link(href="#")
+						+svg(24,24,"telegram")
+					+e.A.link(href="#")
+						+svg(24,24,"telegram")
+					+e.A.link(href="#")
+						+svg(24,24,"telegram")
+					+e.A.link(href="#")
+						+svg(24,24,"telegram")
+				+b.footer-address 
+					+e.title Адрес
+					+e.item Emaar Business Park 1, Al Thanyah Third area, 602, Дубай ОАЭ
+				+b.footer-btn 
+					+e.BUTTON.btn-footer 
+						span Свяжитесь с нами
+						
+		+b.footer-down-wrap
+			+b.footer-copyright © 2007-2023 НЕДВИЖИМОСТИ ОАЭ
+			+b.footer-documents 
+				+e.link Условия использования
+				+e.link Конфиденциальность

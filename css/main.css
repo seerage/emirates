@@ -156,6 +156,126 @@ body, html {
     margin-right: 5px;
   }
 }
+.footer {
+  background-color: #000;
+  padding-top: 30px;
+  color: #fff;
+}
+
+.footer-logo {
+  max-width: 140px;
+}
+.footer-logo span {
+  font-size: 10px;
+  color: rgba(188, 161, 130, 0.7);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 35px;
+  margin-top: 5px;
+}
+
+.footer-tel {
+  margin-bottom: 25px;
+}
+.footer-tel__title {
+  font-size: 19px;
+  font-weight: 400;
+}
+.footer-tel__item {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.footer-mail__title {
+  font-size: 19px;
+  font-weight: 400;
+}
+.footer-mail__item {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.footer-menu__title {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.footer-menu__list {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-menu__list li {
+  margin-bottom: 10px;
+}
+.footer-menu__list li a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+.footer-menu__list li a:hover {
+  color: #BCA182;
+}
+
+.footer-social {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer-social a {
+  text-decoration: none;
+  background-color: #7E6D51;
+  padding: 7px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-address__title {
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.footer-address__item {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.footer-btn__btn-footer {
+  color: #fff;
+  background-color: #7E6D51;
+  border: none;
+  padding: 15px 60px;
+}
+.footer-btn__btn-footer span {
+  font-size: 19px;
+}
+
+.footer-down-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .header-navigation ul {
   display: -webkit-box;
   display: -ms-flexbox;
