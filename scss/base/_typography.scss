@@ -1,4 +1,22 @@
 // -----------------------------------------------------------------------------
 // This file contains typography styles.
 // -----------------------------------------------------------------------------
+.h2-title {
 
+	margin-bottom: 2.941rem;
+	font-size: 2.118rem;
+	font-weight: 700;
+
+}
+
+@media (max-width: $md) {
+
+	.h2-title {
+
+		margin-bottom: 25px;
+		font-size: 30px;
+		font-weight: 700;
+	
+	}
+
+}

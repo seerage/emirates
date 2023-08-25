@@ -13,7 +13,13 @@
 @import "layout/header", "layout/footer", "layout/navigation", "layout/forms";
 
 // 5. Components
-@import "components/button","components/section", "components/slider-dots";
+@import 
+"components/button",
+"components/section", 
+"components/slider-dots", 
+"components/tabs", 
+"components/room-card",
+"components/carousel";
 
 // 6. Page-specific styles
 @import "pages/home";

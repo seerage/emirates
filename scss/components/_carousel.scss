@@ -1,0 +1,80 @@
+.three-slide-carousel {
+
+	$carouselTrackPadding: 50px;
+
+	position: relative;
+	margin-left: -0.588rem;
+	margin-right: -0.588rem;
+
+	.slick-track {
+
+		padding-bottom: $carouselTrackPadding; // Чтобы валюта могла раскрываться
+
+	}
+
+	&__slide {
+
+		margin: 0 .588rem;
+
+	}
+
+	.slick-arrow {
+
+		position: absolute;
+		top: calc(50% - $carouselTrackPadding);
+		margin-top: -12px;
+		cursor: pointer;
+
+		&-next {
+
+			right: -50px;
+
+		}
+
+		&-prev {
+
+			left: -50px;
+
+		}
+
+	}
+
+}
+
+@media (max-width: $xxl) {
+
+	.three-slide-carousel {
+
+		.slick-arrow {
+	
+			&-next {
+	
+				right: -20px;
+	
+			}
+	
+			&-prev {
+	
+				left: -20px;
+	
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width: $sm) {
+
+	.three-slide-carousel {
+
+		.slick-dots {
+
+			bottom: 0;
+
+		}
+
+	}
+
+}
