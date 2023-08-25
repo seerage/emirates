@@ -428,8 +428,38 @@ body, html {
     width: 100%;
   }
 }
+.button {
+  height: 3.529rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-color: #BCA182;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  padding: 0 1.765rem;
+  border: none;
+}
+.button_align-center {
+  margin: auto;
+}
+.button:hover {
+  background-color: #ae8d67;
+  color: #fff;
+}
+
 .section {
   margin-top: 5.882rem;
+}
+.section_background-black {
+  background-color: #000;
 }
 
 @media (max-width: 768px) {
@@ -546,7 +576,11 @@ body, html {
 .room-card__info svg {
   margin-right: 5px;
 }
+.room-card__currency-amount {
+  margin-left: 15px;
+}
 .room-card__currency-changer {
+  position: relative;
   font-size: 9px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -558,13 +592,19 @@ body, html {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
-  height: 20px;
-  min-width: 45px;
+  height: 25px;
+  width: 45px;
   background-color: #BCA182;
   cursor: pointer;
 }
 .room-card__currency-changer-wrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .room-card__currency-changer svg {
   margin-right: 5px;
@@ -573,7 +613,7 @@ body, html {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
+  width: 45px;
   background-color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -595,6 +635,30 @@ body, html {
 }
 .room-card__currency-changer-list-item:hover {
   background-color: #BCA182;
+}
+.room-card__link {
+  background-color: #BCA182;
+  width: 6.471rem;
+  height: 1.765rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  cursor: pointer;
+}
+.room-card__link:hover {
+  background-color: #ae8d67;
+  color: #fff;
 }
 
 .three-slide-carousel {
@@ -631,7 +695,7 @@ body, html {
 }
 @media (max-width: 576px) {
   .three-slide-carousel .slick-dots {
-    bottom: 0;
+    bottom: 15px;
   }
 }
 .main-screen {

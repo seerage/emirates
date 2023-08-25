@@ -7,6 +7,7 @@ export function currencyChanger () {
 				listItem = $(e.target).closest('.room-card__currency-changer-wrapper').find('.room-card__currency-changer-list-item'),
 				openClass = 'is-opened';
 
+
 		if( $(list).hasClass(openClass) ) {
 			$(list).removeClass(openClass);
 		} else {
@@ -18,8 +19,7 @@ export function currencyChanger () {
 			
 			let value = $(e.target).attr('data-currency');
 			$(currencyLabel).html(value);
-			list.removeClass(openClass)
-
+			$(list).removeClass(openClass);
 		});
 
 	});

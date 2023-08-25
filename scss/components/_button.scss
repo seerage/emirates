@@ -1,3 +1,30 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.button {
+
+	height: 3.529rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	background-color: $accent-light;
+	@include transition(background-color);
+	padding: 0 1.765rem;
+	border: none;
+
+	&_align-center {
+
+		margin: auto;
+
+	}
+
+	&:hover {
+
+		background-color: darken($accent-light, 8);
+		color: #fff;
+
+	}
+
+}
