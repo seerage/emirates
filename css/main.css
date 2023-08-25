@@ -171,15 +171,15 @@ body, html {
 }
 .footer {
   background-color: #000;
-  padding-top: 30px;
+  padding-top: 1.765rem;
   color: #fff;
 }
 
 .footer-logo {
-  max-width: 140px;
+  max-width: 8.235rem;
 }
 .footer-logo span {
-  font-size: 10px;
+  font-size: 0.588rem;
   color: rgba(188, 161, 130, 0.7);
   text-align: center;
   display: -webkit-box;
@@ -188,42 +188,42 @@ body, html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 35px;
-  margin-top: 5px;
+  margin-bottom: 2.059rem;
+  margin-top: 0.294rem;
 }
 
 .footer-tel {
-  margin-bottom: 25px;
+  margin-bottom: 1.471rem;
 }
 .footer-tel__title {
-  font-size: 19px;
+  font-size: 1.118rem;
   font-weight: 400;
 }
 .footer-tel__item {
-  font-size: 19px;
+  font-size: 1.118rem;
   font-weight: 700;
 }
 
 .footer-mail__title {
-  font-size: 19px;
+  font-size: 1.118rem;
   font-weight: 400;
 }
 .footer-mail__item {
-  font-size: 19px;
+  font-size: 1.118rem;
   font-weight: 700;
 }
 
 .footer-menu__title {
-  font-size: 21px;
+  font-size: 1.235rem;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 0.882rem;
 }
 .footer-menu__list {
   list-style-type: none;
   padding: 0;
 }
 .footer-menu__list li {
-  margin-bottom: 10px;
+  margin-bottom: 0.588rem;
 }
 .footer-menu__list li a {
   text-decoration: none;
@@ -236,7 +236,7 @@ body, html {
 }
 
 .footer-social {
-  margin-bottom: 30px;
+  margin-bottom: 1.765rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,8 +246,8 @@ body, html {
 .footer-social a {
   text-decoration: none;
   background-color: #7E6D51;
-  padding: 7px;
-  margin-right: 10px;
+  padding: 0.412rem;
+  margin-right: 0.588rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,24 +260,24 @@ body, html {
 }
 
 .footer-address__title {
-  font-size: 19px;
+  font-size: 1.118rem;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 0.882rem;
 }
 .footer-address__item {
-  font-size: 15px;
+  font-size: 0.882rem;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 1.765rem;
 }
 
 .footer-btn__btn-footer {
   color: #fff;
   background-color: #7E6D51;
   border: none;
-  padding: 15px 60px;
+  padding: 0.882rem 3.529rem;
 }
 .footer-btn__btn-footer span {
-  font-size: 19px;
+  font-size: 1.118rem;
 }
 
 .footer-down-wrap {
