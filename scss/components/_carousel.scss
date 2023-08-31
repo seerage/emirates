@@ -12,6 +12,10 @@
 
 	}
 
+	.slick-list {
+		z-index: 5;
+	}
+
 	&__slide {
 
 		margin: 0 .588rem;
@@ -65,7 +69,7 @@
 
 }
 
-@media (max-width: $sm) {
+@media (max-width: $md) {
 
 	.three-slide-carousel {
 

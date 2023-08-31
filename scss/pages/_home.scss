@@ -224,6 +224,48 @@
 
 }
 
+.quote {
+
+	position: relative;
+
+	&__icon-left {
+
+		position: relative;
+		top: 0;
+		left: -45px;
+
+	}
+
+	&__icon-right {
+
+		position: relative;
+		bottom: 0;
+		display: flex;
+		justify-content: flex-end;
+		right: -45px;
+
+	}
+
+	&-image {
+
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+	}
+
+}
+
+@media (max-width: 1600px) {
+
+	.section img.curl {
+
+		opacity: .5;
+
+	}
+
+}
+
 @media (max-width: $xxl) {
 
 	.home-page-slider {
@@ -233,6 +275,12 @@
 			padding: 5.294rem 1.765rem;
 
 		}
+
+	}
+
+	.quote-image {
+
+		right: -50px;
 
 	}
 
@@ -260,6 +308,12 @@
 			margin-bottom: 1.176rem;
 
 		}
+
+	}
+
+	.quote-image {
+
+		display: none;
 
 	}
 
@@ -337,6 +391,12 @@
 			
 		}
 
+	}
+
+	.quote {
+
+		padding: 0 40px;
+		
 	}
 
 }

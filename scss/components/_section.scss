@@ -1,10 +1,43 @@
 .section {
+	
+	&_relative {
+
+		position: relative;
+
+	}
+
+	&--has-background {
+
+		padding: 3.529rem 0;
+
+	}
+
 
 	margin-top: 5.882rem;
 
 	&_background-black {
 
 		background-color: #000;
+
+	}
+
+}
+
+.section-background-pattern {
+
+	position: absolute;
+
+	& img {
+
+		max-width: 100%;
+		height: auto;
+
+	}
+
+	&--align-left-bottom {
+
+		left: 0;
+		bottom: 0;
 
 	}
 

@@ -7,6 +7,30 @@
 	font-size: 2.118rem;
 	font-weight: 700;
 
+	&_white {
+
+		color: $white;
+
+	}
+
+}
+
+.html-content {
+
+	margin-bottom: 1.765rem;
+
+	&_relative {
+
+		position: relative;
+
+	}
+
+	&_white {
+
+		color: $white;
+
+	}
+
 }
 
 @media (max-width: $md) {

@@ -182,19 +182,127 @@ html(lang="ru")
 													+e.currency-amount 73 797 703
 												+e.A.link(href="#") Подробнее
 					button.button.button_align-center Показать все предложения
-.section.section_background-black
+.section.section_background-black.section_relative.section--has-background
+	.section-background-pattern.section-background-pattern--align-left-bottom
+		img.curl(src="images/background-pattern.png", alt="")
 	.container
 		.row 
 			.col-lg-9
 				+b.quote
-					+e.icon-right
-						+svg(44,44,'quote-right')
-					+e.icon-left
-						+svg(44,44,'quote-left')
-					.html-content.html-content_white
+					.html-content.html-content_white.html-content_relative.maw600
+						+e.icon-left
+							+svg(44,44,'quote-right')
 						p 
-						| Я с детства любовался изысканной архитектурой, стильным дизайном, и счастлив, что сейчас помогаю людям жить в таких же роскошных домах. Покупатели ценят работу моей компании за безупречное знание рынка, проницательность и умение вести переговоры даже в самых сложных сделках. 
-						| Мы гордимся тем, что деловые отношения основаны на доверии и взаимном уважении. Мы стремимся не только делать за Вас основную работу, но и повышать осведомленность о недвижимости и инвестициях, чтобы Вы были уверены в своих действиях.
+							| Я с детства любовался изысканной архитектурой, стильным дизайном, 
+							| и счастлив, что сейчас помогаю людям жить в таких же роскошных домах. 
+							| Покупатели ценят работу моей компании за безупречное знание рынка, проницательность и умение 
+							| вести переговоры даже в самых сложных сделках. <br> Мы гордимся тем, что деловые отношения основаны 
+							| на доверии и взаимном уважении. Мы стремимся не только делать за Вас основную работу, 
+							| но и повышать осведомленность о недвижимости и инвестициях, чтобы Вы были уверены в своих действиях.
+						+e.icon-right
+							+svg(44,44,'quote-left')
+					.html-content.html-content_white.tar
+						p — основатель компании KP Group, <br> Подгорный Кирилл Юрьевич
+			.col-lg-3(style="position: relative")
+				.quote-image 
+					img(src="images/man.png", alt="Подгорный Кирилл Юрьевич")
+.section
+	.container
+		h2.h2-title Предложения месяца
+	.container 
+		+b.three-slide-carousel
+			- count = 0;
+			while count < 5
+				- count++
+				+e.slide 
+					+b.room-card
+						+e.image
+							img(src="images/room-card-image-preview.jpg", alt="")
+							+e.label Квартира/апартаменты
+						+e.content
+							+e.title 1-спальные апартаменты в Creek Waters от застройщика Emaar Properties (Type 1)
+							+e.flex-row
+								+e.info
+									+svg(9,17,'location')
+									| Dubai Harbour
+								+e.info
+									+svg(21,21,'helmet')
+									| DAMAC Properties
+							+e.flex-row 
+								+e.info
+									+svg(11,11,'door')
+									| 2 комнаты
+								+e.info 
+									+svg(12,12,'square')
+									| 68 м2
+							+e.flex-row.__footer-row
+								+e.currency-changer-wrapper
+									+e.currency-changer
+										+svg(6,4,'small-arrow-up')
+										+e.current-currency RUB
+									+e.currency-changer-hidden-list
+										+e.currency-changer-list-item(data-currency="US") US
+										+e.currency-changer-list-item(data-currency="EUR") EUR
+										+e.currency-changer-list-item(data-currency="DG") DG
+									+e.currency-amount 73 797 703
+								+e.A.link(href="#") Подробнее
+		button.button.button_align-center Смотреть все объекты
+.section
+	.container
+		+b.quiz
+			+e.title Ответьте на 4 вопроса, а мы отправим лучшие предложения по Вашему запросу 
+			+e.step.__step-1
+				+e.question Какой тип недвижимости вас интересует?
+				+e.answers
+					- let step_1_titles = ['Виллы', 'Апартаменты', 'Дом, таунхаус', 'Пентхаус', 'Лофт', 'Коммерческая недвижимость'];
+					each title in step_1_titles
+						+e.answers-item
+							+e.answers-round
+							+e.answers-name= title
+			+e.step.__step-2(style="display: none")
+				+e.question Какой вид недвижимости вас интересует?
+				+e.answers
+					- let step_2_titles = ['Гаражи', 'Апартаменты', 'Дом, таунхаус', 'Пентхаус', 'Лофт', 'Коммерческая недвижимость'];
+					each title in step_2_titles
+						+e.answers-item
+							+e.answers-round
+							+e.answers-name= title
+			+e.step.__step-3(style="display: none")
+				+e.question Какой вид недвижимости вас интересует3?
+				+e.answers
+					- let step_3_titles = ['Лодки', 'Апартаменты', 'Дом, таунхаус', 'Пентхаус', 'Лофт', 'Коммерческая недвижимость'];
+					each title in step_3_titles
+						+e.answers-item
+							+e.answers-round
+							+e.answers-name= title
+			+e.step.__step-4(style="display: none")
+				+e.question Какой вид недвижимости вас интересует4?
+				+e.answers
+					- let step_4_titles = ['Корабли', 'Апартаменты', 'Дом, таунхаус', 'Пентхаус', 'Лофт', 'Коммерческая недвижимость'];
+					each title in step_4_titles
+						+e.answers-item
+							+e.answers-round
+							+e.answers-name= title
+			+e.step.__step-5(style="display: none")
+				+e.question Конец теста
+				
+			+e.footer
+				+e.ready-check Готово: 
+					+e.SPAN.ready-check-count 0%
+				+e.step-grid.quiz__step-grid--is-0
+				+e.next-btn(data-step = 1) Далее
+			+e.error(style="display: none") Вам нужно выбрать один из вариантов
+.section.section_background-black.section_relative.section--has-background
+	.container
+		h2.h2-title.h2-title_white Самые привлекательные эмираты для жизни в ОАЭ
+		+b.three-slide-carousel
+			- count = 0;
+			while count < 5
+				- count++
+				+e.slide 
+					+b.distric-card(style="background-image: images/districts/dubai-preview.jpg")
+						+e.content
+							+e.A.link(href="#") Дубай
+							
 
-	
 include includes/footer
