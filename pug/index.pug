@@ -339,5 +339,29 @@ html(lang="ru")
 							+e.heading
 								+e.title Сколько можно заработать на предпродаже?
 								+e.name Иван Иванов
+.section 
+	.container
+		h2.h2-title Новости рынка недвижимости Дубая
+	.container 
+		.row 
+			- count = 0;
+			while count < 2
+				- count++
+				.col-lg-6 
+					+b.news-card
+						+e.flex-wrapper
+							+e.IMG.image(src="images/news-card-preview.jpg", alt="Дубай обгоняет Лондон")
+							+e.content 
+								+e.title Дубай обгоняет Лондон
+								+e.subtitle В скором времени Дубай оставит Лондон позади по такому критерию, как объем инвестиций в недвижим...
+								+e.A.link(href="#")
+									+e.SPAN.link-text Читать полностью
+									+e.icon
+										+svg(16,14,"small-arrow-right")
+								+e.date
+									+e.date-icon
+										+svg(12,12,"calendar")
+									+e.text 1 июля 2023 
+		button.button.button_align-center Ко всем новостям
 
 include includes/footer
