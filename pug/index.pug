@@ -60,7 +60,7 @@ html(lang="ru")
 						+b.offer-form
 							+e.title Лучшие базы недвижимости в ОАЭ от компании 
 								+e.SPAN.title_bold Emirates Home
-							+b.FORM.form._3-in-1-row
+							+b.FORM.form.form--3-in-1-row
 								+e.SELECT(name="buy").select
 									+e.OPTION.option(disabled, selected) Купить
 									+e.OPTION.option Недвижимость
@@ -285,7 +285,6 @@ html(lang="ru")
 							+e.answers-name= title
 			+e.step.__step-5(style="display: none")
 				+e.question Конец теста
-				
 			+e.footer
 				+e.ready-check Готово: 
 					+e.SPAN.ready-check-count 0%
@@ -300,9 +299,45 @@ html(lang="ru")
 			while count < 5
 				- count++
 				+e.slide 
-					+b.distric-card(style="background-image: images/districts/dubai-preview.jpg")
+					+b.distric-card 
+						+e.image(style="background-image: url(images/districts/dubai-preview.jpg)")
+						+e.A.content(href="#")
+							+e.text Дубай
+							+svg(30,30,'white-arrow-right')
+		button.button.button_align-center Смотреть все районы
+.section
+	.container 
+		+b.send-pdf-form(style="background-image: url('images/send-pdf-form-bg.jpg')")
+			+e.image 
+				img(src="images/magazine.png", alt="PDF каталог")
+			+e.content.form-box.maw600
+				+b.form-heading 
+					+e.title.__title--has-subtitle Новинки 2023 года
+					+e.subtitle 
+						| Наш каталог в формате PDF 
+						+e.SPAN.subtitle_accent с лучшими объектами 
+						| 2023 года
+				+b.FORM.form.form--1-in-1-row
+					+e.INPUT.input._large(name="name", placeholder="Ваше имя")
+					+e.INPUT.input._large(name="name", placeholder="Ваше телефон")
+					+e.INPUT.input._large(name="name", placeholder="Ваше E-mail")
+					+e.BUTTON.submit-button._large._light(type="submit") Получить каталог в PDF
+					+e.policy Отправляя вы соглашаетесь с политикой конфиденциальности 
+.section 
+	.container 
+		h2.h2-title Популярные вопросы и ответы по недвижимости Эмиратов
+		+b.three-slide-carousel
+			- count = 0;
+			while count < 5
+				- count++
+				+e.slide
+					+b.faq-video
 						+e.content
-							+e.A.link(href="#") Дубай
-							
+							+e.image(style="background-image: url('images/faq-video-image-preview.jpg')")
+							+e.play-icon
+								+svg(93,93,"video-button")
+							+e.heading
+								+e.title Сколько можно заработать на предпродаже?
+								+e.name Иван Иванов
 
 include includes/footer

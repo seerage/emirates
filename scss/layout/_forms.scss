@@ -9,9 +9,32 @@
 		color: #5E5E5E;
 		font-size: .882rem;
 		padding: 0 .882rem;
-		background-color: #E9E9E9;
+		background-color: #fff;
 		border: none;
 		margin-bottom: .882rem;
+
+		&:focus {
+
+			outline: 1px solid $accent;
+
+		}
+
+	}
+
+	&__select, &__input {
+
+		&_large{
+
+			height: 4.118rem;
+			font-size: 1.118rem;
+
+		}
+
+		&_gray-bg {
+
+			background-color: #E9E9E9;
+
+		}
 
 	}
 
@@ -24,6 +47,13 @@
 		color: $white;
 		font-size: 1rem;
 		@include transition(background-color);
+
+		&_large {
+
+			height: 4.118rem;
+			font-size: 1.118rem;
+
+		}
 
 		& svg {
 
@@ -38,9 +68,39 @@
 
 		}
 
+		&_light {
+
+			background-color: $accent-light;
+
+			&:hover {
+
+				background-color: $accent;
+
+			}
+
+		}
+
 	}
 
-	&_3-in-1-row {
+	&__policy {
+
+		font-size: 13px;
+		color: #D1D0D0;
+		line-height: 1.2;
+
+	}
+
+	&--1-in-1-row {
+
+		& input, & select, & button {
+
+			width: 100%
+
+		}
+
+	}
+
+	&--3-in-1-row {
 
 		display: flex;
 		justify-content: space-between;
@@ -56,9 +116,16 @@
 
 }
 
+.form-box {
+
+	padding: 2.353rem 3.529rem;
+	border: 1px solid $accent;
+
+}
+
 @media (max-width: $lg) {
 
-	.form_3-in-1-row {
+	.form--3-in-1-row {
 
 		& input, & select, & button {
 
@@ -72,7 +139,7 @@
 
 @media (max-width: $sm) {
 	
-	.form_3-in-1-row {
+	.form--3-in-1-row {
 
 		& input, & select, & button {
 
@@ -80,6 +147,12 @@
 
 		}
 
+	}
+
+	.form-box {
+
+		padding: 1.765rem
+	
 	}
 
 }

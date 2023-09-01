@@ -1,0 +1,52 @@
+.form-heading {
+
+	&__title {
+
+		font-size: 2.118rem;
+		margin-bottom: 1.176rem;
+		color: #fff;
+		font-weight: 700;
+
+		&--has-subtitle {
+
+			margin-bottom: .471rem
+
+		}
+		
+	}
+
+	&__subtitle {
+
+		font-size: 1.471rem;
+		color: #fff;
+		margin-bottom: 1.176rem;
+
+		&_accent {
+
+			color: $accent-light;
+
+		}
+
+	}
+
+}
+
+@media (max-width: $sm) {
+
+	.form-heading {
+
+		&__title {
+
+			font-size: 1.471rem
+
+		}
+
+		&__subtitle {
+
+			font-size: 1.059rem;
+
+		}
+
+	}
+
+}

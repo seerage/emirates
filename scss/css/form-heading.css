@@ -1,0 +1,13 @@
+.form-heading__title {
+  font-size: 2.118rem;
+  margin-bottom: 1.176rem;
+  color: #fff;
+}
+.form-heading__title--has-subtitle {
+  margin-bottom: 0;
+}
+.form-heading__subtitle {
+  font-size: 1.471rem;
+  color: #fff;
+  margin-bottom: 1.176rem;
+}
